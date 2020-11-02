@@ -1,11 +1,4 @@
-#!/usr/bin/perl
-##############################################################################################################################################
-##Release Deploy
-##Description: This is used to create a new support branch from a release tag and prepare the branch for doing release builds and deployments
-## *** Author Joseph Simon Arokiaraj
-## *** Reviewer Rishabh Gupta / Mani Koodalingam 
-## Date: 06-04-2020
-###############################################################################################################################################
+
 
 
 use File::Basename;
@@ -454,8 +447,7 @@ sub init {
       #"newbuildno=s" => \$newbuild,
       "newnexusrepono=s"  => \$newnexusrepo, 
    );
-   echoText("Given Input: createbranch.pl  -appsecure  $securetag  -mwinteg $mwintegtag  -newbranchno $branch   -newnexusrepono $newnexusrepo \n");
-   usage() if (( ! $securetag ) && (! $mwintegtag ) && (! $branch)  && (! $newnexusrepo));
+  
   }
 
 
